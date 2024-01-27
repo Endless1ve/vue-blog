@@ -1,0 +1,32 @@
+//fonts
+$title-font: 'Murecho', Arial, Helvetica, sans-serif;
+$text-font: 'Roboto', Arial, Helvetica, sans-serif; 
+//colors
+$dark-color: #1E1E20;
+$light-color: #ffffff;
+$accent-color: #42b983;
+//animations
+$hover-animation: color 0.3s ease;
+
+//mixins
+
+//display mixins
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+//hover mixins
+@mixin button-hovered {
+  border: .1px solid $accent-color;
+  color: $accent-color;
+  background-color: $light-color;
+}
+
+@mixin text-hovered {
+  color: $firm-color;
+}
